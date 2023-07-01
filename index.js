@@ -1,10 +1,28 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let splitString = word.split("");
+  let reversedString = splitString.reverse();
+  let joinedString = reversedString.join("");
+   
+  if (word === joinedString){
+    return true
+  }else {
+    return false
+  }
 }
 
 /* 
-  Add your pseudocode here
+  function (string){
+    declare a variable that takes a string that is split using the split keyword
+    turn the split string into a reversed one by using the .reverse() keyword
+    join the split parts of a string using the .join() method
+  }
 */
+
+console.log(isPalindrome('hello'))
+console.log(isPalindrome('racecar'))
+console.log(isPalindrome('mom'))
+console.log(isPalindrome('lo'))
+
 
 /*
   Add written explanation of your solution here
